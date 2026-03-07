@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Notes App</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
+    textarea { width: 100%; height: 150px; }
+  </style>
+</head>
+<body>
+
+  <h1>Notes</h1>
+
+  <input id="title" placeholder="Title" style="width:100%; padding:8px; margin-bottom:8px;">
+  <textarea id="content" placeholder="Write your note here..."></textarea>
+
+  <button onclick="saveNotes()">Save Note</button>
+  <hr>
+
+  <h3>Your Notes</h3>
+  <ul id="notes-list"></ul>
+
+  <script type="module">
+    
+    // Load notes when page opens
+    // renderNotes();
+  </script>
+  <script src="notes.js"></script>
+
+</body>
+</html>
